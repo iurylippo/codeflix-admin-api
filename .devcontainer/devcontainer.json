@@ -13,9 +13,9 @@
 
   // The optional 'workspaceFolder' property is the path VS Code should open by default when
   // connected. This is typically a file mount in .devcontainer/docker-compose.yml
+  "remoteEnv": { "SSH_AUTH_SOCK": "${localEnv:SSH_AUTH_SOCK}" },
   "workspaceMount": [
-    "source=${localWorkspaceFolder}/codeflix-admin-api,target=/workspaces,type=bind,consistency=delegated",
-    "type=bind,source=/home/${localEnv:USER}/.ssh,target=/node/.ssh,readonly"
+    "source=${localWorkspaceFolder}/codeflix-admin-api,target=/workspaces,type=bind,consistency=delegated"
   ],
   "workspaceFolder": "/home/node/app",
   "features": {
