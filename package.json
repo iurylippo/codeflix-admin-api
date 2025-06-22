@@ -16,10 +16,12 @@
     "@types/jest": "^30.0.0",
     "@types/lodash": "^4.17.18",
     "jest": "^30.0.2",
+    "jest-extended": "^6.0.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
   },
   "dependencies": {
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "uuid": "^11.1.0"
   }
 }
